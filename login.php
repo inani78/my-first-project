@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($username == 'admin' && $password == 'password') {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header('Location: index.html'); // Redirect to home page
+        header('Location: dashboard.html'); // Redirect to dashboard
         exit;
     } else {
         echo "Invalid username or password.";
